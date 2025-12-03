@@ -78,7 +78,7 @@ pip install compressai pytorch-msssim pillow pandas matplotlib torchvision
 Make sure PyTorch is installed with CPU or GPU support, depending on your setup.
 
 
-▶️ Usage
+##▶️ Usage
 1️⃣ Preprocess Kodak images
 Assume you have the original Kodak images in data/kodak/.
 
@@ -88,13 +88,10 @@ python process_kodak.py --input data/kodak --output data/processed_kodak
 ```
 This will:
 
-load each image
-
-resize it (longest side = 768)
-
-center-crop to 512×512
-
-save to data/processed_kodak/
+- load each image
+- resize it (longest side = 768)
+- center-crop to 512×512
+- save to `data/processed_kodak/`
 
 2️⃣ Run compression experiments and collect RD data
 ```bash
